@@ -19,7 +19,7 @@ if not API_KEY:
     try:
         API_KEY = st.secrets["API_KEY"]
     except Exception:
-        API_KEY : None
+        API_KEY = None
 if not API_KEY: 
     #If no API Key is found stop the app
     st.error("No API Key Found!")
